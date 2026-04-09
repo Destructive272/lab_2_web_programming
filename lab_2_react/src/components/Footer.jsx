@@ -15,7 +15,7 @@ function Footer() {
     
     // Отримую з LocalStorage і записую в стан
     setSysInfo(localStorage.getItem('systemInfo'));
-  }, []); // Пустий масив означає, що це виконається лише один раз
+  }, []); 
 
   return (
     // Додав pb-6 (padding-bottom), щоб текст не прилипав до самого низу екрана

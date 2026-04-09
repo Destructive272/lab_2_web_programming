@@ -8,10 +8,10 @@ function ContactForm({ theme }) {
   const isDark = theme === 'dark';
 
   useEffect(() => {
-    // Таймер на відкриття вікна (5000 мс = 5 сек для тесту. Для здачі зміни на 60000)
+    // Таймер на відкриття вікна 
     const timer = setTimeout(() => {
       setIsOpen(true);
-    }, 1000); 
+    }, 60000); 
 
     return () => clearTimeout(timer);
   }, []);

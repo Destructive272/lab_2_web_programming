@@ -4,10 +4,8 @@ const osInfo = navigator.platform;
 const browserInfo = navigator.userAgent.split(' ')[0]; // Беремо перше слово з рядка userAgent
 const systemData = `${osInfo} | ${browserInfo}`;
 
-// Зберігаємо в пам'ять браузера
 localStorage.setItem('userSystemInfo', systemData);
 
-// Витягуємо з пам'яті та вставляємо у футер
 document.getElementById('sysInfo').textContent = localStorage.getItem('userSystemInfo');
 
 
