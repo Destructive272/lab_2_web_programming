@@ -41,7 +41,7 @@ setTimeout(() => {
     modal.style.display = 'block';
 }, 60000);
 
-// Закриття модального вікна
+// Закриття модального вікна.
 closeBtn.addEventListener('click', () => {
     modal.style.display = 'none';
 });
@@ -64,7 +64,7 @@ if (currentHour >= 7 && currentHour < 21) {
     body.className = 'dark-theme';
 }
 
-// Подія кліку на кнопку перемикання
+// Подія кліку на кнопку перемикання теми
 themeToggleBtn.addEventListener('click', () => {
     isDarkTheme = !isDarkTheme; // Міняємо стан на протилежний
     
