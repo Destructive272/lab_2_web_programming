@@ -2,8 +2,8 @@ import { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
-import Reviews from './components/reviews';         // Додали імпорт відгуків
-import ContactForm from './components/ContactForm'; // Додали імпорт форми
+import Reviews from './components/reviews';        
+import ContactForm from './components/ContactForm'; 
 
 function App() {
   // Стан для теми
@@ -47,7 +47,7 @@ function App() {
         </button>
       </div>
 
-      {/* Твоє головне вікно резюме */}
+      {/*головне вікно резюме */}
       <div className={`max-w-5xl mx-auto shadow-2xl rounded-2xl border p-8 transition-colors duration-500 ${wrapperBackground}`}>
           <Header theme={theme} />
           <main className="space-y-8">
@@ -58,7 +58,7 @@ function App() {
         <Footer />
       </div>
 
-      {/* Модальне вікно (відображається поверх усього, тому лежить в самому кінці) */}
+      {/* Модальне вікно (відображається поверх усього) */}
       <ContactForm theme={theme}/>
     </div>
   );
