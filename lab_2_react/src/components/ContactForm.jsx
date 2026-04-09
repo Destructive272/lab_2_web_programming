@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 function ContactForm({ theme }) {
   const [isOpen, setIsOpen] = useState(false);
   
-  // Визначаємо поточну тему
+  // Визначаємо поточну тему світла/темна
   const isDark = theme === 'dark';
 
   useEffect(() => {
